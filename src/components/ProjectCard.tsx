@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github, MonitorPlay } from "lucide-react";
+import { ArrowUpRight, CakeSlice, Github, MonitorPlay } from "lucide-react";
 import type { Project } from "../data/site";
 
 type Props = { project: Project; index: number };
@@ -15,6 +15,12 @@ export const ProjectCard = ({ project, index }: Props) => (
           width="800"
           height="480"
         />
+      ) : project.visual === "bakery" ? (
+        <div className="bakery-art" role="img" aria-label="Ilustración tipográfica de SweetBakery">
+          <CakeSlice size={54} strokeWidth={1.5} aria-hidden="true" />
+          <strong>SweetBakery</strong>
+          <span>Hecho para endulzar tus momentos</span>
+        </div>
       ) : (
         <div
           className="screenora-art"
