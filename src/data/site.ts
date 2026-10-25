@@ -66,7 +66,7 @@ export type Project = {
   tags: readonly string[];
   image?: string;
   imageAlt?: string;
-  visual: "burger" | "cerati" | "screenora";
+  visual: "burger" | "cerati" | "bakery" | "screenora";
   demo?: string;
   repository?: string;
   note?: string;
@@ -92,14 +92,27 @@ export const projects: Project[] = [
     type: "Sitio creativo / homenaje",
     year: "2026",
     description:
-      "Un sitio temático dedicado a la música de Gustavo Cerati, con una propuesta visual y maquetación personalizada.",
-    tags: ["HTML", "CSS", "Diseño responsive"],
+      "Un homenaje musical no oficial con discografía interactiva, filtros por etapa y páginas dedicadas al legado de Gustavo Cerati.",
+    tags: ["React", "TypeScript", "Vite", "Netlify"],
     image: "/media/cerativerse.webp",
     imageAlt:
       "Captura referencial de Cerativerse facilitada en el portafolio original",
     visual: "cerati",
-    demo: "https://cerati-verse.vercel.app/html/index.html",
-    note: "Proyecto de homenaje no afiliado al artista.",
+    demo: "https://cerativerse.netlify.app/",
+    repository: "https://github.com/AlemXY/Cerativerse-React",
+    note: "Proyecto de homenaje no oficial, sin afiliación con el artista.",
+  },
+  {
+    name: "SweetBakery",
+    type: "Catálogo de pastelería conceptual",
+    year: "2026",
+    description:
+      "Una web de pastelería con catálogo de postres, filtros y una selección que se puede compartir por WhatsApp.",
+    tags: ["React", "TypeScript", "Vite", "Netlify"],
+    visual: "bakery",
+    demo: "https://sweet-bakery-base.netlify.app/",
+    repository: "https://github.com/AlemXY/SweetBakery-React",
+    note: "Proyecto demostrativo: no procesa pagos ni confirma pedidos.",
   },
   {
     name: "Screenora",
