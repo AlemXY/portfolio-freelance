@@ -116,15 +116,15 @@ export const projects: Project[] = [
   },
   {
     name: "Screenora",
-    type: "Proyecto académico full stack",
+    type: "Aplicación full stack publicada",
     year: "2026",
     description:
-      "Demostración de una plataforma de contenidos con frontend React, API en Node.js y persistencia en MongoDB.",
-    tags: ["React", "TypeScript", "Node.js", "MongoDB"],
+      "Plataforma de streaming académica desplegada, con interfaz React, API en Node.js y persistencia en MongoDB.",
+    tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
     visual: "screenora",
     demo: "https://screenora.netlify.app/",
     repository: "https://github.com/AlemXY/screenora-backend",
-    note: "Demo académica; la disponibilidad de su backend debe comprobarse.",
+    note: "Frontend publicado en Netlify. No se ha verificado la disponibilidad actual del backend.",
   },
 ];
 
