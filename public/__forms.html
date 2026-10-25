@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+  <head><meta charset="utf-8" /><title>Formularios del sitio</title></head>
+  <body>
+    <!-- Netlify Forms discovers this HTML at build time. Keep all field names synchronized with ContactForm.tsx. -->
+    <form name="solicitud-proyecto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="solicitud-proyecto" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="nombre" />
+      <input type="email" name="email" />
+      <select name="servicio"><option>Seleccionar</option></select>
+      <select name="presupuesto"><option>Por definir</option></select>
+      <textarea name="mensaje"></textarea>
+      <input type="checkbox" name="consentimiento" />
+    </form>
+  </body>
+</html>
